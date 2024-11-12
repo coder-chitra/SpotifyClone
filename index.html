@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/Assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Spotify-Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="side-bar">
+            <nav>
+                <div class="nav-logo">
+                    <icon>
+                        <i class="fa-brands fa-spotify"></i>
+                    </icon>
+                    <a href="#">Spotify</a>
+                </div>
+                <div class="nav-option" style="opacity: 1;">
+                    <icon>
+                        <i class="fa-solid fa-house"></i>
+                    </icon>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <icon>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </icon>
+                    <a href="https://open.spotify.com/search">Search</a>
+                </div>
+            </nav>
+            <div class="nav-scroll">
+                <div class="main-lib">
+                    <div class="library">
+                        <div class="library-search nav-option">
+                            <icon>
+                                <img src="library_icon.png" alt="Library Icon">
+                            </icon>
+                            <a href="#">Your Library</a>
+                        </div>
+                        <div class="plus-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="lib-cards">
+                        <div class="card">
+                            <p class="title1">Create your first playlist</p>
+                            <p class="title2">It's easy, we'll help you</p>
+                            <button class="badge">Create playlist</button>
+                        </div>
+
+                        <div class="card">
+                            <p class="title1">Let's find some podcast to follow</p>
+                            <p class="title2">We'll keep you updated on new episodes</p>
+                            <a href="https://open.spotify.com/genre/podcasts-web">
+                                <button class="badge">Browse podcasts</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lib-options">
+                    <div class="div-options">
+                        <div class="option">Legal</div>
+                        <div class="option">Safety & Privacy Center</div>
+                        <div class="option">Privacy Policy</div>
+                        <div class="option">Cookies</div>
+                        <div class="option">About Ads</div>
+                        <div class="option">Accessibility</div>
+                    </div>
+                    <div class="lang-option">
+                        <button class="badge lang-button"><i class="fa-solid fa-globe"></i> English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right" id="hide"></i>
+                </div>
+
+                <div class="sticky-nav-options">
+                    <a
+                        href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2Fsearch%2Fbaby">
+                        <button class="badge sign-up">Sign up</button>
+                    </a>
+                    <a href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F">
+                        <button class="badge log-in">Log in</button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="cards">
+                <h2 class="card-head">Popular artists</h2>
+                <div class="cards-container">
+
+                    <div class="main-card">
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/artist/4YRxDV8wJFPHPTeXepOstw?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+
+                        <p class="card-title">Arijit Singh</p>
+                        <p class="card-info">Artists</p>
+                    </div>
+
+                    <div class="main-card">
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/artist/1wRPtKGflJrBx9BmLsSwlU?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+
+                        <p class="card-title">Pritam</p>
+                        <p class="card-info">Artists</p>
+                    </div>
+
+                    <div class="main-card">
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/artist/1mYsTxnqsietFxj1OgoGbG?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+
+                        <p class="card-title">A.R. Rahman</p>
+                        <p class="card-info">Artists</p>
+                    </div>
+
+                </div>
+
+                <h2 class="card-head">Popular albums</h2>
+                <div class="cards-container">
+                    <div class="main-card">
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/album/0Rkv5iqjF2uenfL0OVB8hg?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+
+                        <p class="card-title">Aashiqui 2</p>
+                        <p class="card-info">Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                    </div>
+
+                    <div class="main-card">
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/album/1wt2WZBZZ9GhM0AC61l7SS?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+
+                        <p class="card-title">Heeriye (feat.Arijit...</p>
+                        <p class="card-info">Jasleen Royal, Arijit Singh, Harrykahanhai</p>
+                    </div>
+                    <div class="main-card">
+
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+                        <p class="card-title">Perfect</p>
+                        <p class="card-info">Ed Sheeran</p>
+                    </div>
+                    <div class="main-card">
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/album/5xjaz957o6YGSXmlfd2tex?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+
+                        <p class="card-title">Ae Dil Hai Mushkil...</p>
+                        <p class="card-info">Pritam</p>
+                    </div>
+                    <div class="main-card">
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/06KyNuuMOX1ROXRhj787tj?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+                        <p class="card-title">We Don't Talk Anymore</p>
+                        <p class="card-info">Charlie Puth, Selena Gomez</p>
+                    </div>
+
+
+                </div>
+
+                <h2 class="card-head">Featured Charts</h2>
+                <div class="cards-container">
+                    <div class="main-card">
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+
+                        <p class="card-title">Top Songs - Global</p>
+                        <p class="card-info">Your weekly update of the most played tracks right now - Global</p>
+                    </div>
+
+                    <div class="main-card">
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/playlist/37i9dQZEVXbLp5XoPON0wI?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+
+                        <p class="card-title">Top 50 - USA</p>
+                        <p class="card-info">Your weekly update of the most played tracks right now - USA.</p>
+                    </div>
+
+                    <div class="main-card">
+
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+
+
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks right now - Global.</p>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="footer-nav-links">
+
+                        <div class="link-container">
+                            <p class="foot-head">Company</p>
+                            <ul class="foot-list">
+                                <li class="list-item">About</li>
+                                <li class="list-item">Jobs</li>
+                                <li class="list-item">For the Record</li>
+                            </ul>
+                        </div>
+
+                        <div class="link-container">
+                            <p class="foot-head">Communities</p>
+                            <ul class="foot-list">
+                                <li class="list-item">For Artists</li>
+                                <li class="list-item">Developers</li>
+                                <li class="list-item">Adverstising</li>
+                                <li class="list-item">Investors</li>
+                                <li class="list-item">Vendors</li>
+                            </ul>
+                        </div>
+
+                        <div class="link-container">
+                            <p class="foot-head">Useful links</p>
+                            <ul class="foot-list">
+                                <li class="list-item">Support</li>
+                                <li class="list-item">Free Mobile App</li>
+                            </ul>
+                        </div>
+
+                        <div class="link-container">
+                            <p class="foot-head">Spotify Plans</p>
+                            <ul class="foot-list">
+                                <li class="list-item">Preminum Individual</li>
+                                <li class="list-item">Preminum Duo</li>
+                                <li class="list-item">Preminum Family</li>
+                                <li class="list-item">Preminum Student</li>
+                                <li class="list-item">Spotify Free</li>
+                            </ul>
+                        </div>
+
+                        <div class="social-media">
+                            <div class="social-icon">
+                                <a href="https://www.instagram.com/spotify/" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+
+                            <div class="social-icon">
+                                <a href="https://x.com/spotify" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+
+                            <div class="social-icon">
+                                <a href="https://www.facebook.com/Spotify" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <hr>
+                    </div>
+                    <div class="copy-right">
+                        <p>&copy; 2024 Spotify AB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
